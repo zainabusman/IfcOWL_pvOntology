@@ -1,0 +1,1121 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#"
+     xml:base="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV">
+        <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment>A Photovoltaic (PV) technology converts solar radiation into other energy such as electric current or thermal energy. A PV ontolgy provides a structured vocabulary for all components of the technology. It can be processed by both humans and machines.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/untitled-ontology-29#PhotovoltaicTechnology"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#AffectsInstallation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#AffectsInstallation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsAffectedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ConsumesEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ConsumesEnergy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ProvidesEnergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Installs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Installs">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInstalledBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InvolvesOrganisation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InvolvesOrganisation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsAComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsAComponentOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isComposedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsAffectedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInstalledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInstalledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInstalledThrough -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInstalledThrough">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isATypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsManufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsManufacturedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Manufactures"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsRequiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Requires"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsResearchedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsResearchedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ResearchesOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Manufactures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Manufactures">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ProvidesEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ProvidesEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Requires">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ResearchesOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ResearchesOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#IsInvolvedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasContent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isContainedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleMaterialType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleMaterialType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isATypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isATypeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isComposedOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#isContainedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasAngleOfInclination -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasAngleOfInclination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasAssessmentCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasAssessmentCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasBatteryType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasBatteryType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasBuildingAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasBuildingAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasBuildingID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasBuildingID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasChargeControllerType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasChargeControllerType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasCo2Savings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasCo2Savings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasComplementaryEnergySource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasComplementaryEnergySource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasComponentEfficiency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasComponentEfficiency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasCost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasDepthofDischarge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasDepthofDischarge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasDustEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasDustEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasElectricalApplianceTypeCommon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasElectricalApplianceTypeCommon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasEnergyLoad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasEnergyLoad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasEnergySource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasEnergySource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasEnvironmentalImpactIndicator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasEnvironmentalImpactIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasFeedinTariffWatt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasFeedinTariffWatt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasGeolocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasGeolocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasInstallationCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasInstallationCost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasInverterFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasInverterFrequency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasInverterType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasInverterType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasLifeCyclePhase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasLifeCyclePhase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasManufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasManufacturerWebLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasManufacturerWebLink"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleCellOrientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleCellOrientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleSurfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleSurfaceArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasMountingType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasMountingType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasNominalFrequencyRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasNominalFrequencyRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasNonRenewableEnergyConsumptionPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasNonRenewableEnergyConsumptionPerUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasOperationalDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasOperationalDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasOptimumInstallationAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasOptimumInstallationAngle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasPeakHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasPeakHours"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasPerformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasPerformance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasPvOutputWatt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasPvOutputWatt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRatedCurrent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRatedCurrent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRatedPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRatedPower"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRatedVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRatedVoltage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRenewableEnergyConsumptionPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRenewableEnergyConsumptionPerUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRequirement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRequirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRoofDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRoofDirection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRoofMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRoofMaterial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRoofSurfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasRoofSurfaceArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasServiceLifeDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasServiceLifeDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasShadingEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasShadingEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasSolarDeviceType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasSolarDeviceType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasSolarIrradiance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasSolarIrradiance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasSustainableBuildingTechnologyType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasSustainableBuildingTechnologyType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasTemperatureEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasTemperatureEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasTotalPrimaryEnergyConcumptionPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasTotalPrimaryEnergyConcumptionPerUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasVoltage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasWarrantyPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasWarrantyPeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasWeight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasWindEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasWindEffect"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#BatteryTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#BatteryTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Cables_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Cables_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ChargeControllerTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ChargeControllerTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ChargeController_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ChargeController_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Client_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Client_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Earthing_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Earthing_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Fuse_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Fuse_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#GridConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#GridConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#GroundMounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#GroundMounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvMounting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#HeatPumps_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#HeatPumps_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonGridConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Installer_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Installer_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InverterTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InverterTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Inverter_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Inverter_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonElectricalPhotovoltaicComponent_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonElectricalPhotovoltaicComponent_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonGridConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonGridConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PhotovoltaicTechnology_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvBattery_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvBattery_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvComponentManufacturer_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvComponentManufacturer_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarDeviceInstallation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvMounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvMounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarDeviceInstallation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#RoofMounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#RoofMounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PvMounting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarCollectors_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarCollectors_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarDeviceInstallation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarDeviceInstallation">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarModule_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarModule_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonElectricalPhotovoltaicComponent_Ext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleMaterialType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#hasModuleMaterialType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Standalone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Standalone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NonGridConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#TechnologyDesigner_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#TechnologyDesigner_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Wires_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Wires_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ALLMAXMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ALLMAXMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXPV"/>
+        <IsResearchedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#OXFORDBROOKESUNIVERSITY"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#AMORPHOUSMODULE"/>
+        <hasAssessmentCondition>Good</hasAssessmentCondition>
+        <hasComponentEfficiency>17.5%</hasComponentEfficiency>
+        <hasCost>$98.50</hasCost>
+        <hasModuleCellOrientation>72cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2535</hasModuleSurfaceArea>
+        <hasRatedPower>225W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>3.2kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#AMORPHOUSMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#AMORPHOUSMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ENPHASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ENPHASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#Inverter_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#FLOWSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#FLOWSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#HYBRIDMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#HYBRIDMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#JOJUSOLAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#JOJUSOLAR"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#LEADACIDSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#LEADACIDSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#LITHIUMIONSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#LITHIUMIONSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXIMUMPOWERPOINTTRACKING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXIMUMPOWERPOINTTRACKING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ChargeControllerTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXPV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXPV"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MICROINVERTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MICROINVERTER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InverterTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MONOCRYSTALLINEMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MONOCRYSTALLINEMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NICKELCADMIUMSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#NICKELCADMIUMSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#OXFORDBROOKESUNIVERSITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#OXFORDBROOKESUNIVERSITY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PC5MAX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PC5MAX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXPV"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#POLYCRYSTALLINEMODULE"/>
+        <hasAssessmentCondition>Good</hasAssessmentCondition>
+        <hasComponentEfficiency>15.9%</hasComponentEfficiency>
+        <hasCost>$60</hasCost>
+        <hasModuleCellOrientation>72cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3042</hasModuleSurfaceArea>
+        <hasRatedPower>260W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>3.8kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#POLYCRYSTALLINEMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#POLYCRYSTALLINEMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#POWEROPTIMIZERINVERTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#POWEROPTIMIZERINVERTER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InverterTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PROTAGOMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PROTAGOMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXPV"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MONOCRYSTALLINEMODULE"/>
+        <hasAssessmentCondition>Excellent</hasAssessmentCondition>
+        <hasComponentEfficiency>20.9%</hasComponentEfficiency>
+        <hasCost>$156.90</hasCost>
+        <hasModuleCellOrientation>60cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1650</hasModuleSurfaceArea>
+        <hasRatedPower>315W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>2.4kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PULSEWIDTHMODULATION -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#PULSEWIDTHMODULATION">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ChargeControllerTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SIMBASOLARSOLUTIONS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SIMBASOLARSOLUTIONS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SOLARSHOP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SOLARSHOP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#STRINGINVERTERS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#STRINGINVERTERS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#InverterTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SUNPOWER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SUNPOWER"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#TRIMAX -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#TRIMAX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MAXPV"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#MONOCRYSTALLINEMODULE"/>
+        <hasAssessmentCondition>Excellent</hasAssessmentCondition>
+        <hasComponentEfficiency>21%</hasComponentEfficiency>
+        <hasCost>$205</hasCost>
+        <hasModuleCellOrientation>60cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1520</hasModuleSurfaceArea>
+        <hasRatedPower>410W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>2kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY -->
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyMaxPV#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
