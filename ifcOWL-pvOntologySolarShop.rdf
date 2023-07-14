@@ -1,0 +1,1120 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#"
+     xml:base="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop">
+        <owl:imports rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:comment>A Photovoltaic (PV) technology converts solar radiation into other energy such as electric current or thermal energy. A PV ontolgy provides a structured vocabulary for all components of the technology. It can be processed by both humans and machines.</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/untitled-ontology-29#PhotovoltaicTechnology"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#AffectsInstallation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#AffectsInstallation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsAffectedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ConsumesEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ConsumesEnergy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ProvidesEnergy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Installs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Installs">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInstalledBy"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InvolvesOrganisation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InvolvesOrganisation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+        <rdfs:range rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsAComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsAComponentOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isComposedOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsAffectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsAffectedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInstalledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInstalledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInstalledThrough -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInstalledThrough">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isATypeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsManufacturedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsManufacturedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Manufactures"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsRequiredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsRequiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Requires"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsResearchedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsResearchedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ResearchesOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Manufactures -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Manufactures">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ProvidesEnergy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ProvidesEnergy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Requires -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Requires">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ResearchesOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ResearchesOn">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#IsInvolvedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasContent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasContent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isContainedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleMaterialType -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleMaterialType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isATypeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isATypeOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isComposedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isComposedOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#isContainedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasAngleOfInclination -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasAngleOfInclination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasAssessmentCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasAssessmentCondition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasBatteryType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasBatteryType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasBuildingAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasBuildingAddress"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasBuildingID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasBuildingID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasChargeControllerType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasChargeControllerType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasCo2Savings -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasCo2Savings"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasComplementaryEnergySource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasComplementaryEnergySource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasComponentEfficiency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasComponentEfficiency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasCost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasDepthofDischarge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasDepthofDischarge"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasDustEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasDustEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasElectricalApplianceTypeCommon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasElectricalApplianceTypeCommon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasEnergyLoad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasEnergyLoad"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasEnergySource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasEnergySource"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasEnvironmentalImpactIndicator -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasEnvironmentalImpactIndicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasFeedinTariffWatt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasFeedinTariffWatt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasGeolocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasGeolocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasInstallationCost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasInstallationCost"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasInverterFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasInverterFrequency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasInverterType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasInverterType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasLifeCyclePhase -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasLifeCyclePhase"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasManufacturer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasManufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasManufacturerWebLink -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasManufacturerWebLink"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleCellOrientation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleCellOrientation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleSurfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleSurfaceArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasMountingType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasMountingType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasName"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasNominalFrequencyRange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasNominalFrequencyRange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasNonRenewableEnergyConsumptionPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasNonRenewableEnergyConsumptionPerUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasOperationalDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasOperationalDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasOptimumInstallationAngle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasOptimumInstallationAngle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasPeakHours -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasPeakHours"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasPerformance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasPerformance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasPvOutputWatt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasPvOutputWatt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRatedCurrent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRatedCurrent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRatedPower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRatedPower"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRatedVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRatedVoltage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRating"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRenewableEnergyConsumptionPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRenewableEnergyConsumptionPerUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRequirement -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRequirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRoofDirection -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRoofDirection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRoofMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRoofMaterial"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRoofSurfaceArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasRoofSurfaceArea"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasServiceLifeDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasServiceLifeDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasShadingEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasShadingEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasSolarDeviceType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasSolarDeviceType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasSolarIrradiance -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasSolarIrradiance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasSustainableBuildingTechnologyType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasSustainableBuildingTechnologyType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasTemperatureEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasTemperatureEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasTotalPrimaryEnergyConcumptionPerUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasTotalPrimaryEnergyConcumptionPerUnit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasVoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasVoltage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasWarrantyPeriod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasWarrantyPeriod"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasWeight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasWindEffect -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasWindEffect"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#BatteryTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#BatteryTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Cables_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Cables_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ChargeControllerTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ChargeControllerTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ChargeController_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ChargeController_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Client_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Client_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Earthing_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Earthing_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Fuse_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Fuse_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#GridConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#GridConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#GroundMounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#GroundMounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvMounting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#HeatPumps_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#HeatPumps_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Hybrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Hybrid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonGridConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Installer_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Installer_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InverterTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InverterTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Inverter_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Inverter_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonElectricalPhotovoltaicComponent_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonElectricalPhotovoltaicComponent_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonGridConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonGridConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PhotovoltaicTechnology_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvBattery_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvBattery_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvComponentManufacturer_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvComponentManufacturer_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvConnection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvConnection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarDeviceInstallation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvMounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvMounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarDeviceInstallation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#RoofMounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#RoofMounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PvMounting"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarCollectors_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarCollectors_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarDeviceInstallation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarDeviceInstallation">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarModule_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarModule_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonElectricalPhotovoltaicComponent_Ext"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleMaterialType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#hasModuleMaterialType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Standalone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Standalone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NonGridConnection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#TechnologyDesigner_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#TechnologyDesigner_Ext">
+        <rdfs:subClassOf rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Wires_Ext -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Wires_Ext">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:Class>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask -->
+
+    <owl:Class rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#AMORPHOUSMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#AMORPHOUSMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ENPHASE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ENPHASE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#Inverter_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#FLOWSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#FLOWSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#HYBRIDMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#HYBRIDMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#JINKO -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#JINKO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARSHOP"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#POLYCRYSTALLINEMODULE"/>
+        <hasAssessmentCondition>Good</hasAssessmentCondition>
+        <hasComponentEfficiency>17%</hasComponentEfficiency>
+        <hasCost>$120</hasCost>
+        <hasModuleCellOrientation>72cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3200</hasModuleSurfaceArea>
+        <hasRatedPower>225W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>2.9kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#JOJUSOLAR -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#JOJUSOLAR"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#LEADACIDSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#LEADACIDSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#LITHIUMIONSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#LITHIUMIONSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MAXIMUMPOWERPOINTTRACKING -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MAXIMUMPOWERPOINTTRACKING">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ChargeControllerTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MAXPV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MAXPV"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MICROINVERTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MICROINVERTER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InverterTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MONOCRYSTALLINEMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MONOCRYSTALLINEMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NICKELCADMIUMSOLARBATTERY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#NICKELCADMIUMSOLARBATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#BatteryTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#OXFORDBROOKESUNIVERSITY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#OXFORDBROOKESUNIVERSITY"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#POLYCRYSTALLINEMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#POLYCRYSTALLINEMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ModuleMaterialTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#POWEROPTIMIZERINVERTER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#POWEROPTIMIZERINVERTER">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InverterTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PULSEWIDTHMODULATION -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#PULSEWIDTHMODULATION">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ChargeControllerTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SIMBASOLARSOLUTIONS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SIMBASOLARSOLUTIONS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARSHOP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARSHOP"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARWORLDXL -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARWORLDXL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARSHOP"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MONOCRYSTALLINEMODULE"/>
+        <hasAssessmentCondition>Excellent</hasAssessmentCondition>
+        <hasComponentEfficiency>20.7%</hasComponentEfficiency>
+        <hasCost>$205</hasCost>
+        <hasModuleCellOrientation>60cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1750</hasModuleSurfaceArea>
+        <hasRatedPower>380W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>12years</hasWarrantyPeriod>
+        <hasWeight>2.2kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#STRINGINVERTERS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#STRINGINVERTERS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#InverterTypeEnum_Ext"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SUNMODULE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SUNMODULE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARSHOP"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#AMORPHOUSMODULE"/>
+        <hasAssessmentCondition>Good</hasAssessmentCondition>
+        <hasComponentEfficiency>19%</hasComponentEfficiency>
+        <hasCost>$195</hasCost>
+        <hasModuleCellOrientation>72cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2650</hasModuleSurfaceArea>
+        <hasRatedPower>310W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>2.4kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SUNPOWER -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SUNPOWER"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ULTRON -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ULTRON">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SolarModule_Ext"/>
+        <IsManufacturedBy rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#SOLARSHOP"/>
+        <hasModuleMaterialType rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#MONOCRYSTALLINEMODULE"/>
+        <hasAssessmentCondition>Good</hasAssessmentCondition>
+        <hasComponentEfficiency>20%</hasComponentEfficiency>
+        <hasCost>$190</hasCost>
+        <hasModuleCellOrientation>60cells</hasModuleCellOrientation>
+        <hasModuleSurfaceArea rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2050</hasModuleSurfaceArea>
+        <hasRatedPower>340W</hasRatedPower>
+        <hasServiceLifeDuration>25years</hasServiceLifeDuration>
+        <hasWarrantyPeriod>10years</hasWarrantyPeriod>
+        <hasWeight>2kg</hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY -->
+
+    <owl:NamedIndividual rdf:about="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySolarShop#ElectricalPhotovoltaicComponent_Ext"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
