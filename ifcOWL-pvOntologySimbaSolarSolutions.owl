@@ -1,0 +1,516 @@
+Prefix(:=<http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySimbaSolarSolutions#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ns:=<http://creativecommons.org/ns#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(obda:=<https://w3id.org/obda/vocabulary#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(vann:=<http://purl.org/vocab/vann/>)
+Prefix(IfcOWL-pvOntologyFinalSimbaSolarSolutions:=<http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologyFinalSimbaSolarSolutions#>)
+
+
+Ontology(<http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySimbaSolarSolutions>
+Import(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL>)
+
+Declaration(Class(:BatteryTypeEnum_Ext))
+Declaration(Class(:Cables_Ext))
+Declaration(Class(:ChargeControllerTypeEnum_Ext))
+Declaration(Class(:ChargeController_Ext))
+Declaration(Class(:Client_Ext))
+Declaration(Class(:Earthing_Ext))
+Declaration(Class(:ElectricalPhotovoltaicComponent_Ext))
+Declaration(Class(:Fuse_Ext))
+Declaration(Class(:GridConnection))
+Declaration(Class(:GroundMounting))
+Declaration(Class(:HeatPumps_Ext))
+Declaration(Class(:Hybrid))
+Declaration(Class(:Installer_Ext))
+Declaration(Class(:InverterTypeEnum_Ext))
+Declaration(Class(:Inverter_Ext))
+Declaration(Class(:ModuleMaterialTypeEnum_Ext))
+Declaration(Class(:NonElectricalPhotovoltaicComponent_Ext))
+Declaration(Class(:NonGridConnection))
+Declaration(Class(:PcComponentManufacturer_Ext))
+Declaration(Class(:PhotovoltaicTechnology_Ext))
+Declaration(Class(:PvBattery_Ext))
+Declaration(Class(:PvConnection))
+Declaration(Class(:PvMounting))
+Declaration(Class(:RoofMounting))
+Declaration(Class(:SolarCollectors_Ext))
+Declaration(Class(:SolarDeviceInstallation))
+Declaration(Class(:SolarModule_Ext))
+Declaration(Class(:Standalone))
+Declaration(Class(:TechnologyDesigner_Ext))
+Declaration(Class(:Wires_Ext))
+Declaration(Class(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice>))
+Declaration(Class(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization>))
+Declaration(Class(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice>))
+Declaration(Class(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum>))
+Declaration(Class(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask>))
+Declaration(ObjectProperty(:AffectsInstallation))
+Declaration(ObjectProperty(:ConsumesEnergy))
+Declaration(ObjectProperty(:Installs))
+Declaration(ObjectProperty(:InvolvesOrganisation))
+Declaration(ObjectProperty(:IsAComponentOf))
+Declaration(ObjectProperty(:IsAffectedBy))
+Declaration(ObjectProperty(:IsInstalledBy))
+Declaration(ObjectProperty(:IsInstalledThrough))
+Declaration(ObjectProperty(:IsInvolvedIn))
+Declaration(ObjectProperty(:IsManufacturedBy))
+Declaration(ObjectProperty(:IsRequiredBy))
+Declaration(ObjectProperty(:IsResearchedBy))
+Declaration(ObjectProperty(:Manufactures))
+Declaration(ObjectProperty(:ProvidesEnergy))
+Declaration(ObjectProperty(:Requires))
+Declaration(ObjectProperty(:ResearchesOn))
+Declaration(ObjectProperty(:hasContent))
+Declaration(ObjectProperty(:hasModuleMaterialType))
+Declaration(ObjectProperty(:isATypeOf))
+Declaration(ObjectProperty(:isComposedOf))
+Declaration(ObjectProperty(:isContainedIn))
+Declaration(DataProperty(:hasAngleOfInclination))
+Declaration(DataProperty(:hasAssessmentCondition))
+Declaration(DataProperty(:hasBatteryType))
+Declaration(DataProperty(:hasBuildingAddress))
+Declaration(DataProperty(:hasBuildingID))
+Declaration(DataProperty(:hasChargeControllerType))
+Declaration(DataProperty(:hasCo2Savings))
+Declaration(DataProperty(:hasComplementaryEnergySource))
+Declaration(DataProperty(:hasComponentEfficiency))
+Declaration(DataProperty(:hasCost))
+Declaration(DataProperty(:hasDepthofDischarge))
+Declaration(DataProperty(:hasDuration))
+Declaration(DataProperty(:hasDustEffect))
+Declaration(DataProperty(:hasElectricalApplianceTypeCommon))
+Declaration(DataProperty(:hasEnergyLoad))
+Declaration(DataProperty(:hasEnergySource))
+Declaration(DataProperty(:hasEnvironmentalImpactIndicator))
+Declaration(DataProperty(:hasFeedinTariffWatt))
+Declaration(DataProperty(:hasGeolocation))
+Declaration(DataProperty(:hasInstallationCost))
+Declaration(DataProperty(:hasInverterFrequency))
+Declaration(DataProperty(:hasInverterType))
+Declaration(DataProperty(:hasLifeCyclePhase))
+Declaration(DataProperty(:hasManufacturer))
+Declaration(DataProperty(:hasManufacturerWebLink))
+Declaration(DataProperty(:hasModuleCellOrientation))
+Declaration(DataProperty(:hasModuleSurfaceArea))
+Declaration(DataProperty(:hasMountingType))
+Declaration(DataProperty(:hasName))
+Declaration(DataProperty(:hasNominalFrequencyRange))
+Declaration(DataProperty(:hasNonRenewableEnergyConsumptionPerUnit))
+Declaration(DataProperty(:hasOperationalDuration))
+Declaration(DataProperty(:hasOptimumInstallationAngle))
+Declaration(DataProperty(:hasPeakHours))
+Declaration(DataProperty(:hasPerformance))
+Declaration(DataProperty(:hasPvOutputWatt))
+Declaration(DataProperty(:hasRatedCurrent))
+Declaration(DataProperty(:hasRatedPower))
+Declaration(DataProperty(:hasRatedVoltage))
+Declaration(DataProperty(:hasRating))
+Declaration(DataProperty(:hasRenewableEnergyConsumptionPerUnit))
+Declaration(DataProperty(:hasRequirement))
+Declaration(DataProperty(:hasRoofDirection))
+Declaration(DataProperty(:hasRoofMaterial))
+Declaration(DataProperty(:hasRoofSurfaceArea))
+Declaration(DataProperty(:hasServiceLifeDuration))
+Declaration(DataProperty(:hasShadingEffect))
+Declaration(DataProperty(:hasSolarDeviceType))
+Declaration(DataProperty(:hasSolarIrradiance))
+Declaration(DataProperty(:hasSustainableBuildingTechnologyType))
+Declaration(DataProperty(:hasTemperatureEffect))
+Declaration(DataProperty(:hasTotalPrimaryEnergyConcumptionPerUnit))
+Declaration(DataProperty(:hasType))
+Declaration(DataProperty(:hasVoltage))
+Declaration(DataProperty(:hasWarrantyPeriod))
+Declaration(DataProperty(:hasWeight))
+Declaration(DataProperty(:hasWindEffect))
+Declaration(NamedIndividual(:ALPHA))
+Declaration(NamedIndividual(:AMORPHOUSMODULE))
+Declaration(NamedIndividual(:ENPHASE))
+Declaration(NamedIndividual(:FLOWSOLARBATTERY))
+Declaration(NamedIndividual(:HYBRIDMODULE))
+Declaration(NamedIndividual(:JASOLAR))
+Declaration(NamedIndividual(:JOJUSOLAR))
+Declaration(NamedIndividual(:LEADACIDSOLARBATTERY))
+Declaration(NamedIndividual(:LITHIUMIONSOLARBATTERY))
+Declaration(NamedIndividual(:MAXIMUMPOWERPOINTTRACKING))
+Declaration(NamedIndividual(:MAXPV))
+Declaration(NamedIndividual(:MICROINVERTER))
+Declaration(NamedIndividual(:MONOCRYSTALLINEMODULE))
+Declaration(NamedIndividual(:NEON))
+Declaration(NamedIndividual(:NICKELCADMIUMSOLARBATTERY))
+Declaration(NamedIndividual(:OXFORDBROOKESUNIVERSITY))
+Declaration(NamedIndividual(:PERC))
+Declaration(NamedIndividual(:POLYCRYSTALLINEMODULE))
+Declaration(NamedIndividual(:POWEROPTIMIZERINVERTER))
+Declaration(NamedIndividual(:PULSEWIDTHMODULATION))
+Declaration(NamedIndividual(:SIMBASOLARSOLUTIONS))
+Declaration(NamedIndividual(:SOLARSHOP))
+Declaration(NamedIndividual(:STRINGINVERTERS))
+Declaration(NamedIndividual(:SUNPOWER))
+Declaration(NamedIndividual(<https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: rdfs:comment (rdfs:comment)
+
+AnnotationAssertion(rdfs:comment rdfs:comment "A Photovoltaic (PV) technology converts solar radiation into other energy such as electric current or thermal energy. A PV ontolgy provides a structured vocabulary for all components of the technology. It can be processed by both humans and machines.")
+AnnotationPropertyDomain(rdfs:comment <http://www.semanticweb.org/zainabusman/ontologies/2021/5/untitled-ontology-29#PhotovoltaicTechnology>)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: :AffectsInstallation (:AffectsInstallation)
+
+InverseObjectProperties(:AffectsInstallation :IsAffectedBy)
+
+# Object Property: :ConsumesEnergy (:ConsumesEnergy)
+
+InverseObjectProperties(:ConsumesEnergy :ProvidesEnergy)
+
+# Object Property: :Installs (:Installs)
+
+SubObjectPropertyOf(:Installs :IsInvolvedIn)
+InverseObjectProperties(:Installs :IsInstalledBy)
+FunctionalObjectProperty(:Installs)
+ObjectPropertyDomain(:Installs <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization>)
+ObjectPropertyRange(:Installs :PhotovoltaicTechnology_Ext)
+
+# Object Property: :InvolvesOrganisation (:InvolvesOrganisation)
+
+InverseObjectProperties(:InvolvesOrganisation :IsInvolvedIn)
+FunctionalObjectProperty(:InvolvesOrganisation)
+ObjectPropertyDomain(:InvolvesOrganisation <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice>)
+ObjectPropertyRange(:InvolvesOrganisation <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization>)
+
+# Object Property: :IsAComponentOf (:IsAComponentOf)
+
+InverseObjectProperties(:IsAComponentOf :isComposedOf)
+
+# Object Property: :IsInstalledBy (:IsInstalledBy)
+
+SubObjectPropertyOf(:IsInstalledBy :IsInvolvedIn)
+
+# Object Property: :IsInstalledThrough (:IsInstalledThrough)
+
+InverseObjectProperties(:IsInstalledThrough :isATypeOf)
+
+# Object Property: :IsInvolvedIn (:IsInvolvedIn)
+
+FunctionalObjectProperty(:IsInvolvedIn)
+ObjectPropertyDomain(:IsInvolvedIn <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization>)
+
+# Object Property: :IsManufacturedBy (:IsManufacturedBy)
+
+SubObjectPropertyOf(:IsManufacturedBy :IsInvolvedIn)
+InverseObjectProperties(:IsManufacturedBy :Manufactures)
+FunctionalObjectProperty(:IsManufacturedBy)
+ObjectPropertyDomain(:IsManufacturedBy :PhotovoltaicTechnology_Ext)
+
+# Object Property: :IsRequiredBy (:IsRequiredBy)
+
+SubObjectPropertyOf(:IsRequiredBy :IsInvolvedIn)
+InverseObjectProperties(:IsRequiredBy :Requires)
+
+# Object Property: :IsResearchedBy (:IsResearchedBy)
+
+SubObjectPropertyOf(:IsResearchedBy :IsInvolvedIn)
+InverseObjectProperties(:IsResearchedBy :ResearchesOn)
+
+# Object Property: :Manufactures (:Manufactures)
+
+SubObjectPropertyOf(:Manufactures :IsInvolvedIn)
+FunctionalObjectProperty(:Manufactures)
+ObjectPropertyRange(:Manufactures :PhotovoltaicTechnology_Ext)
+
+# Object Property: :ProvidesEnergy (:ProvidesEnergy)
+
+SubObjectPropertyOf(:ProvidesEnergy owl:topObjectProperty)
+
+# Object Property: :Requires (:Requires)
+
+SubObjectPropertyOf(:Requires :IsInvolvedIn)
+
+# Object Property: :ResearchesOn (:ResearchesOn)
+
+SubObjectPropertyOf(:ResearchesOn :IsInvolvedIn)
+
+# Object Property: :hasContent (:hasContent)
+
+InverseObjectProperties(:hasContent :isContainedIn)
+
+# Object Property: :hasModuleMaterialType (:hasModuleMaterialType)
+
+SubObjectPropertyOf(:hasModuleMaterialType owl:topObjectProperty)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: :hasModuleCellOrientation (:hasModuleCellOrientation)
+
+SubDataPropertyOf(:hasModuleCellOrientation owl:topDataProperty)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: :BatteryTypeEnum_Ext (:BatteryTypeEnum_Ext)
+
+SubClassOf(:BatteryTypeEnum_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum>)
+
+# Class: :Cables_Ext (:Cables_Ext)
+
+SubClassOf(:Cables_Ext :ElectricalPhotovoltaicComponent_Ext)
+
+# Class: :ChargeControllerTypeEnum_Ext (:ChargeControllerTypeEnum_Ext)
+
+SubClassOf(:ChargeControllerTypeEnum_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum>)
+
+# Class: :ChargeController_Ext (:ChargeController_Ext)
+
+SubClassOf(:ChargeController_Ext :ElectricalPhotovoltaicComponent_Ext)
+
+# Class: :Client_Ext (:Client_Ext)
+
+SubClassOf(:Client_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor>)
+
+# Class: :Earthing_Ext (:Earthing_Ext)
+
+SubClassOf(:Earthing_Ext :ElectricalPhotovoltaicComponent_Ext)
+
+# Class: :ElectricalPhotovoltaicComponent_Ext (:ElectricalPhotovoltaicComponent_Ext)
+
+SubClassOf(:ElectricalPhotovoltaicComponent_Ext :PhotovoltaicTechnology_Ext)
+
+# Class: :Fuse_Ext (:Fuse_Ext)
+
+SubClassOf(:Fuse_Ext :ElectricalPhotovoltaicComponent_Ext)
+
+# Class: :GridConnection (:GridConnection)
+
+SubClassOf(:GridConnection :PvConnection)
+
+# Class: :GroundMounting (:GroundMounting)
+
+SubClassOf(:GroundMounting :PvMounting)
+
+# Class: :HeatPumps_Ext (:HeatPumps_Ext)
+
+SubClassOf(:HeatPumps_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice>)
+
+# Class: :Hybrid (:Hybrid)
+
+SubClassOf(:Hybrid :NonGridConnection)
+
+# Class: :Installer_Ext (:Installer_Ext)
+
+SubClassOf(:Installer_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor>)
+
+# Class: :InverterTypeEnum_Ext (:InverterTypeEnum_Ext)
+
+SubClassOf(:InverterTypeEnum_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum>)
+
+# Class: :Inverter_Ext (:Inverter_Ext)
+
+SubClassOf(:Inverter_Ext :ElectricalPhotovoltaicComponent_Ext)
+
+# Class: :ModuleMaterialTypeEnum_Ext (:ModuleMaterialTypeEnum_Ext)
+
+SubClassOf(:ModuleMaterialTypeEnum_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum>)
+
+# Class: :NonElectricalPhotovoltaicComponent_Ext (:NonElectricalPhotovoltaicComponent_Ext)
+
+SubClassOf(:NonElectricalPhotovoltaicComponent_Ext :PhotovoltaicTechnology_Ext)
+
+# Class: :NonGridConnection (:NonGridConnection)
+
+SubClassOf(:NonGridConnection :PvConnection)
+
+# Class: :PcComponentManufacturer_Ext (:PcComponentManufacturer_Ext)
+
+SubClassOf(:PcComponentManufacturer_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor>)
+
+# Class: :PhotovoltaicTechnology_Ext (:PhotovoltaicTechnology_Ext)
+
+SubClassOf(:PhotovoltaicTechnology_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice>)
+
+# Class: :PvBattery_Ext (:PvBattery_Ext)
+
+SubClassOf(:PvBattery_Ext :ElectricalPhotovoltaicComponent_Ext)
+SubClassOf(:PvBattery_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice>)
+
+# Class: :PvConnection (:PvConnection)
+
+SubClassOf(:PvConnection :SolarDeviceInstallation)
+
+# Class: :PvMounting (:PvMounting)
+
+SubClassOf(:PvMounting :SolarDeviceInstallation)
+
+# Class: :RoofMounting (:RoofMounting)
+
+SubClassOf(:RoofMounting :PvMounting)
+
+# Class: :SolarCollectors_Ext (:SolarCollectors_Ext)
+
+SubClassOf(:SolarCollectors_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice>)
+
+# Class: :SolarDeviceInstallation (:SolarDeviceInstallation)
+
+SubClassOf(:SolarDeviceInstallation <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask>)
+
+# Class: :SolarModule_Ext (:SolarModule_Ext)
+
+SubClassOf(:SolarModule_Ext :NonElectricalPhotovoltaicComponent_Ext)
+SubClassOf(:SolarModule_Ext ObjectAllValuesFrom(:hasModuleMaterialType :ModuleMaterialTypeEnum_Ext))
+SubClassOf(:SolarModule_Ext ObjectExactCardinality(1 :hasModuleMaterialType :ModuleMaterialTypeEnum_Ext))
+
+# Class: :Standalone (:Standalone)
+
+SubClassOf(:Standalone :NonGridConnection)
+
+# Class: :TechnologyDesigner_Ext (:TechnologyDesigner_Ext)
+
+SubClassOf(:TechnologyDesigner_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor>)
+
+# Class: :Wires_Ext (:Wires_Ext)
+
+SubClassOf(:Wires_Ext :ElectricalPhotovoltaicComponent_Ext)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :ALPHA (:ALPHA)
+
+ClassAssertion(:SolarModule_Ext :ALPHA)
+ObjectPropertyAssertion(:IsManufacturedBy :ALPHA :SIMBASOLARSOLUTIONS)
+ObjectPropertyAssertion(:hasModuleMaterialType :ALPHA :MONOCRYSTALLINEMODULE)
+DataPropertyAssertion(:hasAssessmentCondition :ALPHA "Good")
+DataPropertyAssertion(:hasComponentEfficiency :ALPHA "18.9%")
+DataPropertyAssertion(:hasCost :ALPHA "$172")
+DataPropertyAssertion(:hasModuleCellOrientation :ALPHA "72cells")
+DataPropertyAssertion(:hasModuleSurfaceArea :ALPHA "2050"^^xsd:integer)
+DataPropertyAssertion(:hasRatedPower :ALPHA "310W")
+DataPropertyAssertion(:hasServiceLifeDuration :ALPHA "25years")
+DataPropertyAssertion(:hasWarrantyPeriod :ALPHA "12years")
+DataPropertyAssertion(:hasWeight :ALPHA "18.9%")
+
+# Individual: :AMORPHOUSMODULE (:AMORPHOUSMODULE)
+
+ClassAssertion(:ModuleMaterialTypeEnum_Ext :AMORPHOUSMODULE)
+
+# Individual: :ENPHASE (:ENPHASE)
+
+ClassAssertion(:Inverter_Ext :ENPHASE)
+
+# Individual: :FLOWSOLARBATTERY (:FLOWSOLARBATTERY)
+
+ClassAssertion(:BatteryTypeEnum_Ext :FLOWSOLARBATTERY)
+
+# Individual: :HYBRIDMODULE (:HYBRIDMODULE)
+
+ClassAssertion(:ModuleMaterialTypeEnum_Ext :HYBRIDMODULE)
+
+# Individual: :JASOLAR (:JASOLAR)
+
+ClassAssertion(:SolarModule_Ext :JASOLAR)
+ObjectPropertyAssertion(:IsManufacturedBy :JASOLAR :SIMBASOLARSOLUTIONS)
+ObjectPropertyAssertion(:hasModuleMaterialType :JASOLAR :POLYCRYSTALLINEMODULE)
+DataPropertyAssertion(:hasAssessmentCondition :JASOLAR "Excellent")
+DataPropertyAssertion(:hasComponentEfficiency :JASOLAR "17.4%")
+DataPropertyAssertion(:hasCost :JASOLAR "$130")
+DataPropertyAssertion(:hasModuleCellOrientation :JASOLAR "72cells")
+DataPropertyAssertion(:hasModuleSurfaceArea :JASOLAR "2800"^^xsd:integer)
+DataPropertyAssertion(:hasRatedPower :JASOLAR "290W")
+DataPropertyAssertion(:hasServiceLifeDuration :JASOLAR "25years")
+DataPropertyAssertion(:hasWarrantyPeriod :JASOLAR "12years")
+DataPropertyAssertion(:hasWeight :JASOLAR "2.6kg")
+
+# Individual: :LEADACIDSOLARBATTERY (:LEADACIDSOLARBATTERY)
+
+ClassAssertion(:BatteryTypeEnum_Ext :LEADACIDSOLARBATTERY)
+
+# Individual: :LITHIUMIONSOLARBATTERY (:LITHIUMIONSOLARBATTERY)
+
+ClassAssertion(:BatteryTypeEnum_Ext :LITHIUMIONSOLARBATTERY)
+
+# Individual: :MAXIMUMPOWERPOINTTRACKING (:MAXIMUMPOWERPOINTTRACKING)
+
+ClassAssertion(:ChargeControllerTypeEnum_Ext :MAXIMUMPOWERPOINTTRACKING)
+
+# Individual: :MICROINVERTER (:MICROINVERTER)
+
+ClassAssertion(:InverterTypeEnum_Ext :MICROINVERTER)
+
+# Individual: :MONOCRYSTALLINEMODULE (:MONOCRYSTALLINEMODULE)
+
+ClassAssertion(:ModuleMaterialTypeEnum_Ext :MONOCRYSTALLINEMODULE)
+
+# Individual: :NEON (:NEON)
+
+ClassAssertion(:SolarModule_Ext :NEON)
+ObjectPropertyAssertion(:IsManufacturedBy :NEON :SIMBASOLARSOLUTIONS)
+ObjectPropertyAssertion(:hasModuleMaterialType :NEON :MONOCRYSTALLINEMODULE)
+DataPropertyAssertion(:hasAssessmentCondition :NEON "Excellent")
+DataPropertyAssertion(:hasComponentEfficiency :NEON "20%")
+DataPropertyAssertion(:hasCost :NEON "$223")
+DataPropertyAssertion(:hasModuleCellOrientation :NEON "60cells")
+DataPropertyAssertion(:hasModuleSurfaceArea :NEON "2000"^^xsd:integer)
+DataPropertyAssertion(:hasRatedPower :NEON "415W")
+DataPropertyAssertion(:hasServiceLifeDuration :NEON "25years")
+DataPropertyAssertion(:hasWarrantyPeriod :NEON "10years")
+DataPropertyAssertion(:hasWeight :NEON "1.9kg")
+
+# Individual: :NICKELCADMIUMSOLARBATTERY (:NICKELCADMIUMSOLARBATTERY)
+
+ClassAssertion(:BatteryTypeEnum_Ext :NICKELCADMIUMSOLARBATTERY)
+
+# Individual: :PERC (:PERC)
+
+ClassAssertion(:SolarModule_Ext :PERC)
+ObjectPropertyAssertion(:IsManufacturedBy :PERC :SIMBASOLARSOLUTIONS)
+ObjectPropertyAssertion(:hasModuleMaterialType :PERC :MONOCRYSTALLINEMODULE)
+DataPropertyAssertion(:hasAssessmentCondition :PERC "Good")
+DataPropertyAssertion(:hasComponentEfficiency :PERC "19.4%")
+DataPropertyAssertion(:hasCost :PERC "$269")
+DataPropertyAssertion(:hasModuleCellOrientation :PERC "60cells")
+DataPropertyAssertion(:hasModuleSurfaceArea :PERC "1950"^^xsd:integer)
+DataPropertyAssertion(:hasRatedPower :PERC "330W")
+DataPropertyAssertion(:hasServiceLifeDuration :PERC "25years")
+DataPropertyAssertion(:hasWarrantyPeriod :PERC "10years")
+DataPropertyAssertion(:hasWeight :PERC "2.4kg")
+
+# Individual: :POLYCRYSTALLINEMODULE (:POLYCRYSTALLINEMODULE)
+
+ClassAssertion(:ModuleMaterialTypeEnum_Ext :POLYCRYSTALLINEMODULE)
+
+# Individual: :POWEROPTIMIZERINVERTER (:POWEROPTIMIZERINVERTER)
+
+ClassAssertion(:InverterTypeEnum_Ext :POWEROPTIMIZERINVERTER)
+
+# Individual: :PULSEWIDTHMODULATION (:PULSEWIDTHMODULATION)
+
+ClassAssertion(:ChargeControllerTypeEnum_Ext :PULSEWIDTHMODULATION)
+
+# Individual: :STRINGINVERTERS (:STRINGINVERTERS)
+
+ClassAssertion(:InverterTypeEnum_Ext :STRINGINVERTERS)
+
+# Individual: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY> (BATTERY)
+
+ClassAssertion(:ElectricalPhotovoltaicComponent_Ext <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY>)
+
+
+)
