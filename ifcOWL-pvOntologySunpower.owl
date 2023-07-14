@@ -1,0 +1,828 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySunpower"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySunpower">
+    <Prefix name="" IRI="http://www.semanticweb.org/zainabusman/ontologies/2021/5/IfcOWL-pvOntologySunpower#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="ns" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="obda" IRI="https://w3id.org/obda/vocabulary#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Import>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL</Import>
+    <Declaration>
+        <Class IRI="#BatteryTypeEnum_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cables_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargeControllerTypeEnum_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChargeController_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Client_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earthing_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fuse_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GridConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroundMounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HeatPumps_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hybrid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Installer_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InverterTypeEnum_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inverter_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonElectricalPhotovoltaicComponent_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NonGridConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PvBattery_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PvComponentManufacturer_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PvConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PvMounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoofMounting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarCollectors_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarDeviceInstallation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolarModule_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Standalone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnologyDesigner_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wires_Ext"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#AffectsInstallation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ConsumesEnergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Installs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#InvolvesOrganisation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInstalledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInstalledThrough"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsManufacturedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsRequiredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsResearchedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Manufactures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProvidesEnergy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Requires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ResearchesOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModuleMaterialType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isATypeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComposedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAngleOfInclination"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssessmentCondition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBatteryType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBuildingAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBuildingID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasChargeControllerType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCo2Savings"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasComplementaryEnergySource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasComponentEfficiency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDepthofDischarge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDustEffect"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasElectricalApplianceTypeCommon"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEnergyLoad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEnergySource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEnvironmentalImpactIndicator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFeedinTariffWatt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGeolocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInstallationCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInverterFrequency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInverterType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLifeCyclePhase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasManufacturerWebLink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasModuleCellOrientation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasModuleSurfaceArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMountingType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNominalFrequencyRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNonRenewableEnergyConsumptionPerUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOperationalDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOptimumInstallationAngle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPeakHours"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPerformance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPvOutputWatt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRatedCurrent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRatedPower"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRatedVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRenewableEnergyConsumptionPerUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRequirement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRoofDirection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRoofMaterial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRoofSurfaceArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasServiceLifeDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasShadingEffect"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSolarDeviceType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSolarIrradiance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSustainableBuildingTechnologyType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperatureEffect"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTotalPrimaryEnergyConcumptionPerUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVoltage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWarrantyPeriod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWindEffect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AMORPHOUSMODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ENPHASE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FLOWSOLARBATTERY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HYBRIDMODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JOJUSOLAR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LEADACIDSOLARBATTERY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LITHIUMIONSOLARBATTERY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAXEON"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAXIMUMPOWERPOINTTRACKING"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAXPV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MICROINVERTER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MONOCRYSTALLINEMODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NICKELCADMIUMSOLARBATTERY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OXFORDBROOKESUNIVERSITY"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POLYCRYSTALLINEMODULE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#POWEROPTIMIZERINVERTER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PULSEWIDTHMODULATION"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SIMBASOLARSOLUTIONS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SOLARSHOP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#STRINGINVERTERS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SUNPOWER"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BatteryTypeEnum_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cables_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargeControllerTypeEnum_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChargeController_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Client_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earthing_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fuse_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GridConnection"/>
+        <Class IRI="#PvConnection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroundMounting"/>
+        <Class IRI="#PvMounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HeatPumps_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hybrid"/>
+        <Class IRI="#NonGridConnection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Installer_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InverterTypeEnum_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inverter_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDeviceTypeEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonElectricalPhotovoltaicComponent_Ext"/>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NonGridConnection"/>
+        <Class IRI="#PvConnection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PvBattery_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PvBattery_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcElectricFlowStorageDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PvComponentManufacturer_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PvConnection"/>
+        <Class IRI="#SolarDeviceInstallation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PvMounting"/>
+        <Class IRI="#SolarDeviceInstallation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoofMounting"/>
+        <Class IRI="#PvMounting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarCollectors_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarDeviceInstallation"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTask"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModule_Ext"/>
+        <Class IRI="#NonElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModule_Ext"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasModuleMaterialType"/>
+            <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolarModule_Ext"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasModuleMaterialType"/>
+            <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Standalone"/>
+        <Class IRI="#NonGridConnection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnologyDesigner_Ext"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcActor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wires_Ext"/>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        <NamedIndividual IRI="#AMORPHOUSMODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Inverter_Ext"/>
+        <NamedIndividual IRI="#ENPHASE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BatteryTypeEnum_Ext"/>
+        <NamedIndividual IRI="#FLOWSOLARBATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        <NamedIndividual IRI="#HYBRIDMODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BatteryTypeEnum_Ext"/>
+        <NamedIndividual IRI="#LEADACIDSOLARBATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BatteryTypeEnum_Ext"/>
+        <NamedIndividual IRI="#LITHIUMIONSOLARBATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SolarModule_Ext"/>
+        <NamedIndividual IRI="#MAXEON"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargeControllerTypeEnum_Ext"/>
+        <NamedIndividual IRI="#MAXIMUMPOWERPOINTTRACKING"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InverterTypeEnum_Ext"/>
+        <NamedIndividual IRI="#MICROINVERTER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        <NamedIndividual IRI="#MONOCRYSTALLINEMODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BatteryTypeEnum_Ext"/>
+        <NamedIndividual IRI="#NICKELCADMIUMSOLARBATTERY"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ModuleMaterialTypeEnum_Ext"/>
+        <NamedIndividual IRI="#POLYCRYSTALLINEMODULE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InverterTypeEnum_Ext"/>
+        <NamedIndividual IRI="#POWEROPTIMIZERINVERTER"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChargeControllerTypeEnum_Ext"/>
+        <NamedIndividual IRI="#PULSEWIDTHMODULATION"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InverterTypeEnum_Ext"/>
+        <NamedIndividual IRI="#STRINGINVERTERS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectricalPhotovoltaicComponent_Ext"/>
+        <NamedIndividual IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#BATTERY"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInstalledBy"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <NamedIndividual IRI="#JOJUSOLAR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsManufacturedBy"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <NamedIndividual IRI="#SUNPOWER"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasModuleMaterialType"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <NamedIndividual IRI="#MONOCRYSTALLINEMODULE"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentCondition"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>Excellent</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasComponentEfficiency"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>23%</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCost"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>$354</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModuleCellOrientation"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>104cells</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasModuleSurfaceArea"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1774</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRatedPower"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>400W</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasServiceLifeDuration"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>40years</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWarrantyPeriod"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>25years</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasWeight"/>
+        <NamedIndividual IRI="#MAXEON"/>
+        <Literal>1.9kg</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Installs"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsInstalledBy"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsManufacturedBy"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsRequiredBy"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsResearchedBy"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Manufactures"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProvidesEnergy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Requires"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ResearchesOn"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasModuleMaterialType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#AffectsInstallation"/>
+        <ObjectProperty IRI="#IsAffectedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ConsumesEnergy"/>
+        <ObjectProperty IRI="#ProvidesEnergy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Installs"/>
+        <ObjectProperty IRI="#IsInstalledBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#InvolvesOrganisation"/>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsAComponentOf"/>
+        <ObjectProperty IRI="#isComposedOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsInstalledThrough"/>
+        <ObjectProperty IRI="#isATypeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsManufacturedBy"/>
+        <ObjectProperty IRI="#Manufactures"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsRequiredBy"/>
+        <ObjectProperty IRI="#Requires"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#IsResearchedBy"/>
+        <ObjectProperty IRI="#ResearchesOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasContent"/>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Installs"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#InvolvesOrganisation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#IsManufacturedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Manufactures"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Installs"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#InvolvesOrganisation"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSolarDevice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsInvolvedIn"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsManufacturedBy"/>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Installs"/>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#InvolvesOrganisation"/>
+        <Class IRI="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPersonAndOrganization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Manufactures"/>
+        <Class IRI="#PhotovoltaicTechnology_Ext"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasModuleCellOrientation"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>rdfs:comment</AbbreviatedIRI>
+        <Literal>A Photovoltaic (PV) technology converts solar radiation into other energy such as electric current or thermal energy. A PV ontolgy provides a structured vocabulary for all components of the technology. It can be processed by both humans and machines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationPropertyDomain>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/zainabusman/ontologies/2021/5/untitled-ontology-29#PhotovoltaicTechnology</IRI>
+    </AnnotationPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
